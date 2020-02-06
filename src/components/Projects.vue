@@ -26,7 +26,8 @@ export default {
   },
   data() {
     return {
-      allProjects: []
+      allProjects: [],
+      error: null
     }
   },
   async mounted() {
@@ -56,7 +57,7 @@ export default {
       });
       this.allProjects = result.data.data.allProjects.reverse();
     } catch (error) {
-      console.error(error);
+      this.error = error;
     }
   }
 }
