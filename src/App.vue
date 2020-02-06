@@ -1,28 +1,54 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Start/>
+    <Projects/>
+    <About/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Start from '@/components/Start.vue';
+import Projects from '@/components/Projects.vue';
+import About from '@/components/About.vue';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
-  }
-}
+    Start,
+    Projects,
+    About,
+  },
+};
 </script>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: 'Montserrat';
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 12px;
+  background: #212121;
+}
+::-webkit-scrollbar-thumb {
+  background: #2D98B8;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2D98B8;
 }
 </style>
