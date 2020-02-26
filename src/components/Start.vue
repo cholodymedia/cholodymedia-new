@@ -33,7 +33,7 @@
       <p class="title" data-aos="zoom-in" data-aos-duration="1000">cholodymedia</p>
       <p class="subtitle" data-aos="zoom-in-up">
         <span class="lang">#Vue</span>
-        <span class="lang">#MySQL</span>
+        <span class="lang">#JavaScript</span>
         <span class="lang">#PHP</span>
       </p>
     </div>
