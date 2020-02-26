@@ -1,47 +1,32 @@
 <template>
   <div class="startWrapper">
     <nav class="nav">
-      <div class="socialBox">
-        <a href="https://github.com/cholodymedia" target="blank">
-          <font-awesome-icon
-            :icon="['fab','github']"
-            v-if="link === false || show === true || hide === true"
-            :class="{'animation-show' : show, 'animation-hide' : hide}"
-            title="github"
-          />
-        </a>
-      </div>
-      <div class="socialBox">
+      <div class="socialBox" data-aos="fade-left">
         <a href="mailto:cholodymedia@gmail.com">
           <font-awesome-icon
             :icon="['far','envelope']"
-            v-if="link === false || show === true || hide === true"
-            :class="{'animation-show' : show, 'animation-hide' : hide}"
             title="email"
           />
         </a>
       </div>
-      <div class="socialBox">
+      <div class="socialBox" data-aos="fade-left">
+        <a href="https://github.com/cholodymedia" target="blank">
+          <font-awesome-icon
+            :icon="['fab','github']"
+            title="github"
+          />
+        </a>
+      </div>
+      <div class="socialBox" data-aos="fade-left">
         <a href="https://www.instagram.com/cholodymedia/" target="blank">
           <font-awesome-icon
             :icon="['fab','instagram']"
-            v-if="link === false || show === true || hide === true"
-            :class="{'animation-show' : show, 'animation-hide' : hide}"
             title="instagram"
           />
         </a>
       </div>
-      <div class="socialButton" data-aos="fade-up-left">
-        <div class="circle" @click="handleClick">
-          <font-awesome-icon
-            :icon="['fas','link']"
-            v-if="link === true"
-          />
-          <font-awesome-icon
-            :icon="['fas','times']"
-            v-if="link === false"
-          />
-        </div>
+      <div class="socialspace">
+        
       </div>
     </nav>
     <div class="main">
@@ -117,7 +102,7 @@ export default {
       align-items: center;
       justify-content: flex-end;
       .socialBox {
-        width: 22vw;
+        width: 20vw;
         height: 100%;
         display: flex;
         justify-content: center;
@@ -127,35 +112,6 @@ export default {
         a {
           text-decoration: none;
           color: #FAFAFA;
-        }
-        :last-of-type {
-          margin-right: 3vw;
-        }
-        .animation-show {
-          animation: socialAppear 0.5s ease-out forwards;
-        }
-        @keyframes socialAppear {
-          0% {
-            opacity: 0;
-            transform: translate(10vw);
-          }
-          100% {
-            opacity: 1;
-            transform: translate(0);
-          }
-        }
-        .animation-hide {
-          animation: socialDisappear 0.5s ease-out forwards;
-        }
-        @keyframes socialDisappear {
-          0% {
-            opacity: 1;
-            transform: translate(0);
-          }
-          100% {
-            opacity: 0;
-            transform: translate(10vw);
-          }
         }
         @media (min-width: 768px) {
           font-size: 2rem;
@@ -168,41 +124,9 @@ export default {
           }
         }
       }
-      .socialButton {
-        width: 22vw;
+      .socialspace {
+        width: 3vw;
         height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        .circle {
-          width: 3rem;
-          height: 3rem;
-          border-radius: 50%;
-          background-color: #424242;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-size: 1.3rem;
-          color: #FAFAFA;
-        }
-        @media (min-width: 768px) {
-          .circle {
-            width: 4.8rem;
-            height: 4.8rem;
-            border-radius: 50%;
-            font-size: 1.8rem;
-          }
-        }
-        @media (min-width: 1200px) {
-          width: 10vw;
-          .circle {
-            width: 3rem;
-            height: 3rem;
-            border-radius: 50%;
-            font-size: 1.5rem;
-          }
-        }
       }
     }
 
