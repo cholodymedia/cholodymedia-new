@@ -1,17 +1,13 @@
 <template>
   <div class="wrapper">
-    <Nav/>
+    <div class="sign">404</div>
+    <div class="text">Page Not Found</div>
   </div>
 </template>
 
 <script>
-import Nav from '@/components/blog/Nav'
-
 export default {
-  name: 'Blog',
-  components: {
-    Nav
-  }
+  name: 'Error'
 }
 </script>
 
@@ -29,6 +25,19 @@ export default {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #29303a;
+  background-color: #212121;
+  align-items: center;
+  justify-content: center;
+  
+  .sign {
+    font-size: 20rem;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.137);
+  }
+  .text {
+    font-size: 3rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.137);
+  }
 }
 </style>
