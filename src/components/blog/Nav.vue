@@ -26,7 +26,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sniglet&display=swap');
   nav {
     width: 100%;
     height: 4rem;
@@ -63,7 +63,7 @@ export default {
 
         .blog {
           margin-left: 0.6rem;
-          font-family: 'Rock Salt';
+          font-family: 'Sniglet';
         }
       }
     }

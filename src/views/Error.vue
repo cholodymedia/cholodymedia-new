@@ -39,5 +39,17 @@ export default {
     font-weight: 500;
     color: rgba(255, 255, 255, 0.137);
   }
+
+  @media (max-width: 760px) {
+    justify-content: flex-start;
+    padding-top: 5rem;
+
+    .sign {
+      font-size: 8rem;
+    }
+    .text {
+      font-size: 2rem;
+    }
+  }
 }
 </style>
