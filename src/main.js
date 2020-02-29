@@ -12,6 +12,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import App from './App.vue'
+import router from './router'
 
 AOS.init();
 library.add(faGithub, faEnvelope, faInstagram, faLink, faTimes, faAngleDoubleDown, faGlobeAmericas);
@@ -20,5 +21,6 @@ Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.config.productionTip = false
 
 new Vue({
-  render: h => h(App),
+  router,
+  render: h => h(App)
 }).$mount('#app')
