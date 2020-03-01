@@ -17,12 +17,17 @@
           />
         </a>
       </div>
-      <div class="socialBox" data-aos="fade-left">
+      <!-- <div class="socialBox" data-aos="fade-left">
         <a href="https://www.instagram.com/cholodymedia/" target="blank">
           <font-awesome-icon
             :icon="['fab','instagram']"
             title="instagram"
           />
+        </a>
+      </div> -->
+      <div class="socialBox" data-aos="fade-left">
+        <a href="https://cholodymedia.pl/blog">
+          <span class="blog">blog</span>
         </a>
       </div>
       <div class="socialspace">
@@ -86,6 +91,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css?family=Iceland&display=swap');
   .startWrapper {
     width: 100vw;
     height: 100vh;
@@ -109,18 +115,30 @@ export default {
         align-items: center;
         font-size: 1.4rem;
         color: #FAFAFA;
+        .blog {
+          font-family: 'Iceland';
+          font-size: 2rem;
+        }
         a {
           text-decoration: none;
           color: #FAFAFA;
         }
         @media (min-width: 768px) {
           font-size: 2rem;
+          .blog {
+            font-family: 'Iceland';
+            font-size: 2.5rem;
+          }
         }
         @media (min-width: 1200px) {
           width: 8vw;
           font-size: 1.8rem;
           :last-of-type {
             margin-right: 0vw;
+          }
+          .blog {
+            font-family: 'Iceland';
+            font-size: 2.5rem;
           }
         }
       }
