@@ -31,6 +31,11 @@ export default {
   -webkit-tap-highlight-color: transparent;
   scroll-behavior: smooth;
 }
+
+body {
+  background-color: #29303a;
+}
+
 .wrapper {
   font-family: 'Montserrat';
   width: 100vw;

@@ -13,7 +13,7 @@
           {{ body }}
         </pre>
       </div>
-      <a class="link" v-if="link != ''" :href="link">
+      <a class="link" v-if="link != ''" :href="link" target="_blank">
         <div class="icon">
           <font-awesome-icon :icon="['fas','link']" />
         </div>
@@ -82,7 +82,7 @@ export default {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        padding-right: 1rem;
+        padding-right: 1.2rem;
         font-size: 1rem;
         font-weight: 500;
 

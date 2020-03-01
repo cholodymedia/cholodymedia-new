@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200">
     <div class="title">
       <span>Info Posts</span>
     </div>
@@ -94,13 +94,13 @@ export default {
       flex-direction: column;
 
       .post {
-        margin-top: 6rem;
+        margin-top: 4rem;
         place-self: center;
         &:first-of-type {
-          margin-top: 2rem;
+          margin-top: 1rem;
         }
         &:last-of-type {
-          margin-bottom: 6rem;
+          margin-bottom: 4rem;
         }
       }
     }
