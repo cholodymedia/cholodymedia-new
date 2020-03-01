@@ -41,7 +41,7 @@ body {
   overflow-x: hidden;
 }
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 8px;
   background: #212121;
 }
 ::-webkit-scrollbar-thumb {

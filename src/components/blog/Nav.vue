@@ -8,7 +8,7 @@
         cholodymedia<span class="blog">blog</span>
       </div>
     </div>
-    <div class="right"></div>
+    <div class="right" @click="goHome">portfolio</div>
   </nav>
 </template>
 
@@ -21,12 +21,17 @@ export default {
     return {
       logo: logo
     }
+  },
+  methods: {
+    goHome() {
+      this.$router.push({name: 'Home'});
+    }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css?family=Sniglet&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Iceland&display=swap');
   nav {
     width: 100%;
     height: 4rem;
@@ -63,8 +68,26 @@ export default {
 
         .blog {
           margin-left: 0.6rem;
-          font-family: 'Sniglet';
+          font-family: 'Iceland';
+          font-size: 1.7rem;
+          color: #3993aa;
         }
+      }
+    }
+
+    .right {
+      width: 12rem;
+      height: 100%;
+      margin-left: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 1.3rem;
+      transition: 0.2s;
+      &:hover {
+        cursor: pointer;
+        background-color: #00b5e1;
       }
     }
   }

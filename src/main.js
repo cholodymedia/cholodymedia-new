@@ -6,6 +6,8 @@ import {
   faTimes,
   faAngleDoubleDown,
   faGlobeAmericas,
+  faInfoCircle,
+  faCalendar
 } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
@@ -15,7 +17,7 @@ import App from './App.vue'
 import router from './router'
 
 AOS.init();
-library.add(faGithub, faEnvelope, faInstagram, faLink, faTimes, faAngleDoubleDown, faGlobeAmericas);
+library.add(faGithub, faEnvelope, faInstagram, faLink, faTimes, faAngleDoubleDown, faGlobeAmericas, faInfoCircle, faCalendar);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
 Vue.config.productionTip = false
