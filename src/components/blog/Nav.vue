@@ -44,6 +44,9 @@ export default {
     @media (max-width: 1200px) {
       height: 7rem;
     }
+    @media (max-width: 767px) {
+      height: 5rem;
+    }
 
     .left {
       width: 25rem;
@@ -63,11 +66,18 @@ export default {
         @media (max-width: 1200px) {
           width: 7rem;
         }
+        @media (max-width: 767px) {
+          width: 4rem;
+        }
+
 
         img {
           width: 3rem;
           @media (max-width: 1200px) {
             width: 4rem;
+          }
+          @media (max-width: 767px) {
+            width: 3rem;
           }
         }
       }
@@ -84,6 +94,9 @@ export default {
 
         @media (max-width: 1200px) {
           font-size: 2rem;
+        }
+        @media (max-width: 767px) {
+          font-size: 1.3rem;
         }
 
         .home {
@@ -106,6 +119,9 @@ export default {
           @media (max-width: 1200px) {
             font-size: 3rem;
           }
+          @media (max-width: 767px) {
+          font-size: 2.1rem;
+        }
         }
       }
     }

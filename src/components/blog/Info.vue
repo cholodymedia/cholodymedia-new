@@ -121,6 +121,9 @@ export default {
         place-self: center;
         &:first-of-type {
           margin-top: 1rem;
+          @media (max-width: 767px) {
+            margin-top: 0rem
+          }
         }
         &:last-of-type {
           margin-bottom: 4rem;

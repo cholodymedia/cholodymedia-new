@@ -85,6 +85,10 @@ export default {
         @media (max-width: 1200px) {
           font-size: 1.5rem;
         }
+        @media (max-width: 767px) {
+          padding-left: 1.5rem;
+          font-size: 1.1rem;
+        }
       }
       .date {
         flex: 1;
@@ -97,6 +101,9 @@ export default {
         font-weight: 500;
         @media (max-width: 1200px) {
           font-size: 1.2rem;
+        }
+        @media (max-width: 767px) {
+          font-size: 0.9rem;
         }
 
         .day {
@@ -127,6 +134,10 @@ export default {
             font-size: 1.5rem;
             line-height: 1.8rem;
           }
+          @media (max-width: 767px) {
+            font-size: 1.1rem;
+            line-height: 1.8rem;
+          }
         }
       }
 
@@ -151,6 +162,9 @@ export default {
         @media (max-width: 1200px) {
           min-width: 15rem;
         }
+        @media (max-width: 767px) {
+          min-width: 13rem;
+        }
 
         .icon {
           width: 3rem;
@@ -172,6 +186,9 @@ export default {
           font-weight: 500;
           @media (max-width: 1200px) {
             font-size: 1.3rem;
+          }
+          @media (max-width: 767px) {
+            font-size: 1.1rem;
           }
         }
       }

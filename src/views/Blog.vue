@@ -75,15 +75,14 @@ body {
 
 .wrapper {
   font-family: 'Montserrat';
-  width: 100vw;
-  min-width: 35rem;
+  max-width: 100vw;
   height: auto;
   display: flex;
   flex-direction: column;
   background-color: #29303a;
 
   @media (max-width: 1200px) {
-    min-height: 110vh;
+    min-height: 100vh;
     overflow-x: hidden;
   }
 
@@ -107,6 +106,12 @@ body {
     flex-direction: row;
     margin-bottom: 2rem;
 
+    @media (max-width: 767px) {
+      margin-top: 0.5rem;
+      height: 5rem;
+      margin-bottom: 1.5rem;
+    }
+
     .info {
       width: 50%;
       height: 100%;
@@ -115,6 +120,9 @@ body {
       align-items: center;
       color: #a2aab4;
       font-size: 2.5rem;
+      @media (max-width: 767px) {
+        font-size: 1.9rem;
+      }
 
       .button {
         width: 80%;
@@ -133,6 +141,9 @@ body {
       align-items: center;
       color: #a2aab4;
       font-size: 2.5rem;
+      @media (max-width: 767px) {
+        font-size: 1.9rem;
+      }
 
       .button {
         width: 80%;
