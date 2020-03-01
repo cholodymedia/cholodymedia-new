@@ -8,18 +8,20 @@
         cholodymedia<span class="blog">blog</span>
       </div>
     </div>
-    <div class="right" @click="goHome">portfolio</div>
+    <div class="right" @click="goHome" v-if="!isMobile">portfolio</div>
   </nav>
 </template>
 
 <script>
 import logo from '@/assets/logo.png'
+import { isMobile } from 'mobile-device-detect';
 
 export default {
   name: 'Nav',
   data() {
     return {
-      logo: logo
+      logo: logo,
+      isMobile: isMobile
     }
   },
   methods: {
@@ -39,10 +41,18 @@ export default {
     display: flex;
     flex-direction: row;
 
+    @media (max-width: 1200px) {
+      height: 7rem;
+    }
+
     .left {
       width: 25rem;
       height: 100%;
       display: flex;
+
+      @media (max-width: 1200px) {
+        width: 100%;
+      }
 
       .logo {
         width: 5rem;
@@ -50,9 +60,15 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+        @media (max-width: 1200px) {
+          width: 7rem;
+        }
 
         img {
           width: 3rem;
+          @media (max-width: 1200px) {
+            width: 4rem;
+          }
         }
       }
 
@@ -66,11 +82,18 @@ export default {
         font-size: 1.2rem;
         font-weight: 400;
 
+        @media (max-width: 1200px) {
+          font-size: 2rem;
+        }
+
         .blog {
           margin-left: 0.6rem;
           font-family: 'Iceland';
           font-size: 1.7rem;
           color: #3993aa;
+          @media (max-width: 1200px) {
+            font-size: 3rem;
+          }
         }
       }
     }

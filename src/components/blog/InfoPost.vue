@@ -60,12 +60,19 @@ export default {
     flex-direction: column;
     overflow: hidden;
 
+    @media (max-width: 1200px) {
+      width: 90%;
+    }
+
     .title {
       width: 100%;
       height: 3rem;
       background-color: #00b5e1;
       color: white;
       display: flex;
+      @media (max-width: 1200px) {
+        height: 4rem;
+      }
 
       .text {
         flex: 1;
@@ -75,6 +82,9 @@ export default {
         font-size: 1.3rem;
         font-weight: 500;
         padding-left: 2rem;
+        @media (max-width: 1200px) {
+          font-size: 1.5rem;
+        }
       }
       .date {
         flex: 1;
@@ -85,6 +95,9 @@ export default {
         padding-right: 1.2rem;
         font-size: 1rem;
         font-weight: 500;
+        @media (max-width: 1200px) {
+          font-size: 1.2rem;
+        }
 
         .day {
           padding-left: 0.6rem;
@@ -110,6 +123,10 @@ export default {
           white-space: pre-line;
           line-height: 1.5rem;
           font-size: 1.2rem;
+          @media (max-width: 1200px) {
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+          }
         }
       }
 
@@ -131,6 +148,9 @@ export default {
         &:visited {
           text-decoration: none;
         }
+        @media (max-width: 1200px) {
+          min-width: 15rem;
+        }
 
         .icon {
           width: 3rem;
@@ -150,6 +170,9 @@ export default {
           color: white;
           font-size: 1.1rem;
           font-weight: 500;
+          @media (max-width: 1200px) {
+            font-size: 1.3rem;
+          }
         }
       }
     }

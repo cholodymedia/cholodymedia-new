@@ -1,8 +1,24 @@
 <template>
-  <div class="wrapper" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200">
+  <div class="wrapper" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200" v-if="!isMobile">
     <div class="title">
       <span>Helpfull Links</span>
     </div>
+    <div class="main">
+      <LinkPost
+      v-for="(post, index) in allPosts"
+      :key="index" 
+      class="post"
+      :title="post.title"
+      :description="post.description"
+      :link="post.link"
+      :blue="post.blue"
+      :pink="post.pink"
+      :yellow="post.yellow"
+      />
+    </div>
+  </div>
+
+    <div class="wrapper" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200" v-else>
     <div class="main">
       <LinkPost
       v-for="(post, index) in allPosts"
@@ -22,6 +38,7 @@
 <script>
 import axios from 'axios'
 import LinkPost from '@/components/blog/LinkPost'
+import { isMobile } from 'mobile-device-detect';
 
 export default {
   name: 'Links',
@@ -31,7 +48,8 @@ export default {
   data() {
     return {
       allPosts: [],
-      error: null
+      error: null,
+      isMobile: isMobile
     }
   },
   async mounted() {

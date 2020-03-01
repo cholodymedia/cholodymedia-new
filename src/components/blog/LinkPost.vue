@@ -51,6 +51,10 @@ export default {
     flex-direction: column;
     overflow: hidden;
 
+    @media (max-width: 1200px) {
+      width: 90%;
+    }
+
     .top {
       width: 100%;
       height: 4rem;
