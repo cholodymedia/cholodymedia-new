@@ -154,7 +154,7 @@ export default {
       .footer {
         height: 10vh;
         width: 100vw;
-        background: #262727;
+        background: #1d242c;
         display: flex;
         justify-content: center;
         align-items: center;

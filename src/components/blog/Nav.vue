@@ -5,7 +5,7 @@
         <img :src="logo" alt="Logo">
       </div>
       <div class="name">
-        cholodymedia<span class="blog">blog</span>
+        <a class="home" href="http://cholodymedia.pl/">cholodymedia</a><span class="blog">blog</span>
       </div>
     </div>
     <div class="right" @click="goHome" v-if="!isMobile">portfolio</div>
@@ -84,6 +84,18 @@ export default {
 
         @media (max-width: 1200px) {
           font-size: 2rem;
+        }
+
+        .home {
+          text-decoration: none;
+          color: white;
+          &:hover {
+            cursor: pointer;
+          }
+          &:visited {
+            text-decoration: none;
+            color: white;
+          }
         }
 
         .blog {
