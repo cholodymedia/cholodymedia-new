@@ -69,7 +69,7 @@ export default {
     padding-bottom: 40px;
     width: 100vw;
     height: auto;
-    background: #262727;
+    background: #1d242c;
     display: grid;
     grid-template-rows: repeat(6, 70vh);
     grid-template-columns: 1fr;

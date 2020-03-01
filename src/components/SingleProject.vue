@@ -67,7 +67,7 @@ export default {
     -webkit-box-shadow: 0px 10px 14px 0px rgba(0, 0, 0, 0.527);
     -moz-box-shadow: 0px 10px 14px 0px rgba(0, 0, 0, 0.527);
     box-shadow: 0px 10px 14px 0px rgba(0, 0, 0, 0.527);
-    background: #212121;
+    background: #161c22;
     border-radius: 10px;
     width: 80vw;
     height: 100%;

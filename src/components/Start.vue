@@ -1,7 +1,11 @@
 <template>
   <div class="startWrapper">
     <nav class="nav">
-      <div class="socialBox" data-aos="fade-left">
+      <div class="left">
+        <img :src="logo" alt="Logo" data-aos="fade-right">
+      </div>
+      <div class="right">
+        <div class="socialBox" data-aos="fade-left">
         <a href="mailto:cholodymedia@gmail.com">
           <font-awesome-icon
             :icon="['far','envelope']"
@@ -33,6 +37,7 @@
       <div class="socialspace">
         
       </div>
+      </div>
     </nav>
     <div class="main">
       <p class="title" data-aos="zoom-in" data-aos-duration="1000">cholodymedia</p>
@@ -56,6 +61,8 @@
 </template>
 
 <script>
+import logo from '@/assets/logo.png'
+
 export default {
   name: 'Start',
   data() {
@@ -63,6 +70,7 @@ export default {
       link: true,
       show: false,
       hide: false,
+      logo: logo
     };
   },
   methods: {
@@ -96,7 +104,7 @@ export default {
     width: 100vw;
     height: 100vh;
     min-height: 500px;
-    background: #212121;
+    background: #161c22;
     display: flex;
     flex-direction: column;
     @media (max-width: 700px) {
@@ -105,8 +113,26 @@ export default {
     .nav {
       flex: 1.8;
       display: flex;
-      align-items: center;
-      justify-content: flex-end;
+      flex-direction: row;
+      .left {
+        flex: 1;
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 4.5rem;
+          margin-left: 2rem;
+          @media (max-width: 700px) {
+            width: 3rem;
+            margin-left: 1rem;
+          }
+        }
+      }
+      .right {
+        flex: 3;
+        display: flex;
+        justify-content: flex-end;
+      }
       .socialBox {
         width: 20vw;
         height: 100%;

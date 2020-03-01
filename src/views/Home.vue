@@ -42,7 +42,7 @@ body {
 }
 ::-webkit-scrollbar {
   width: 8px;
-  background: #212121;
+  background: #161c22;
 }
 ::-webkit-scrollbar-thumb {
   background: #2D98B8;

@@ -37,7 +37,7 @@ export default {
   .aboutWrapper {
     width: 100vw;
     height: 68vh;
-    background: #212121;
+    background: #161c22;
     display: flex;
     flex-direction: column;
     .content {
@@ -84,7 +84,7 @@ export default {
     .footer {
       height: 8vh;
       width: 100vw;
-      background: #262727;
+      background: #1d242c;
       display: flex;
       justify-content: center;
       align-items: center;
