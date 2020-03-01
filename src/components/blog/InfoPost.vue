@@ -9,7 +9,9 @@
     </div>
     <div class="main">
       <div class="text-box">
-        {{ body }}
+        <pre>
+          {{ body }}
+        </pre>
       </div>
       <a class="link" v-if="link != ''" :href="link">
         <div class="icon">
@@ -100,10 +102,15 @@ export default {
         width: 85%;
         align-self: center;
         color: #a2aab4;
-        text-align: justify;
         padding-top: 1.5rem;
         padding-bottom: 2rem;
-        line-height: 1.5rem;
+        
+        pre {
+          word-wrap: break-word;
+          white-space: pre-line;
+          line-height: 1.5rem;
+          font-size: 1.2rem;
+        }
       }
 
       .link {
