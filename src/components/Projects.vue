@@ -65,35 +65,48 @@ export default {
 
 <style lang="scss" scoped>
   .projects-wrapper {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
     width: 100vw;
     height: auto;
     background: #1d242c;
     display: grid;
-    grid-template-rows: repeat(6, 70vh);
+    grid-template-rows: repeat(6, 28rem);
     grid-template-columns: 1fr;
-    grid-gap: 40px;
+    grid-gap: 4rem;
     justify-content: space-evenly;
     .single-project{
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 70vh;
+      height: 28rem;
     }
     @media (min-width: 768px) {
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: repeat(3, 55vh);
+      grid-template-rows: repeat(3, 50rem);
       grid-gap: 0px;
       .single-project{
-        height: 55vh;
+        height: 50rem;
       }
     }
     @media (min-width: 1200px) {
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: repeat(2, 90vh);
+      grid-template-rows: repeat(3, 45rem);
+      padding-top: 1rem;
+      padding-bottom: 2rem;
+      grid-gap: 0rem;
       .single-project{
-        height: 90vh;
+        height: 45rem;
+      }
+    }
+    @media (min-width: 1800px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: repeat(3, 50rem);
+      padding-top: 1rem;
+      padding-bottom: 2rem;
+      grid-gap: 0rem;
+      .single-project{
+        height: 50rem;
       }
     }
   }

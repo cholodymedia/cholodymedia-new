@@ -147,7 +147,11 @@ export default {
     }
     @media (min-width: 1200px) {
       height: 85%;
-      width: 80%;
+      width: 24rem;
+    }
+    @media (min-width: 1800px) {
+      height: 85%;
+      width: 28rem;
     }
   }
 </style>
