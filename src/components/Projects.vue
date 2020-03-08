@@ -55,7 +55,7 @@ export default {
           `
         }
       });
-      this.allProjects = result.data.data.allProjects.reverse();
+      this.allProjects = result.data.data.allProjects;
     } catch (error) {
       this.error = error;
     }
