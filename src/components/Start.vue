@@ -141,6 +141,7 @@ export default {
         align-items: center;
         font-size: 1.4rem;
         color: #FAFAFA;
+
         .blog {
           font-family: 'Iceland';
           font-size: 2rem;
@@ -148,6 +149,10 @@ export default {
         a {
           text-decoration: none;
           color: #FAFAFA;
+          transition: 0.3s;
+          &:hover {
+            color: #00b7e2;
+          }
         }
         @media (min-width: 768px) {
           font-size: 2rem;
@@ -205,7 +210,7 @@ export default {
       }
       @media (min-width: 768px) {
         .title {
-          font-size: 3.5rem;
+          font-size: 4rem;
         }
         .subtitle {
           font-size: 2rem;
