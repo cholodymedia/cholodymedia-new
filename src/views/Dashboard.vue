@@ -24,7 +24,8 @@ export default {
   name: "Dashboard",
   data() {
     return {
-      visitors: []
+      visitors: [],
+      error: null
     }
   },
   components: {
@@ -41,8 +42,8 @@ export default {
       token: localStorage.getItem("token")
     }).then(response => {
       this.visitors = response.data.visitors;
-    }).catch(() => {
-      console.log("ERROR");
+    }).catch(err => {
+      this.error = err
     })
   }
 }
