@@ -1,7 +1,7 @@
 <template>
   <div class="box">
     <div class="flag">
-      <img src="https://ipgeolocation.io/static/flags/pl_64.png">
+      <img :src="flag">
     </div>
     <div class="country">{{ country }}</div>
     <div class="city">{{ city }}</div>

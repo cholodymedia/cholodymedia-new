@@ -108,6 +108,7 @@ export default {
 .visitors-list {
   width: 40rem;
   min-height: 25rem;
+  max-height: 25rem;
   overflow-y: auto;
   border-radius: 0.5rem;
   background: #161c22;
@@ -115,7 +116,6 @@ export default {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  overflow: hidden;
   @media (max-width: 768px) {
     width: 90%;
   }
