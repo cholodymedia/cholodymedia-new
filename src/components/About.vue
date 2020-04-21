@@ -52,7 +52,7 @@ export default {
         align-items: center;
         img {
           width: 25vw;
-          opacity: 0.9;
+          filter: contrast(0.9);
         }
       }
       .text-box {

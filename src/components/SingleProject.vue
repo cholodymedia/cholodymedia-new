@@ -43,12 +43,17 @@
       <div class="bottom">
         <p>{{description}}</p>
       </div>
+      <div class="tags">
+        <Tag v-for="(tag, index) in tags" :key="index" :language="tag.language" :color="tag.color.hex"/>
+      </div>
     </div>
   </div>
   </div>
 </template>
 
 <script>
+import Tag from '@/components/Tag'
+
 export default {
   name: 'SingleProject',
   props: [
@@ -58,7 +63,11 @@ export default {
     'img',
     'github',
     'website',
+    'tags'
   ],
+  components: {
+    Tag
+  }
 };
 </script>
 
@@ -89,7 +98,7 @@ export default {
       display: flex;
       flex-direction: column;
       .top {
-        flex: 1.5;
+        flex: 1.8;
         display: flex;
         .title {
           flex: 4;
@@ -153,5 +162,13 @@ export default {
       height: 85%;
       width: 28rem;
     }
+  }
+
+  .tags {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
   }
 </style>

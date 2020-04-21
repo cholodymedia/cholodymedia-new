@@ -9,6 +9,7 @@
       :img="item.image.url"
       :github="item.github"
       :website="item.website"
+      :tags="item.tags"
       class="single-project"
       data-aos="zoom-in-up"
       />
@@ -50,6 +51,12 @@ export default {
                 }
                 github
                 website
+                tags {
+                  color {
+                    hex
+                  }
+                  language
+                }
               }
             }
           `

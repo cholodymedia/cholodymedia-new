@@ -44,7 +44,7 @@
       <p class="subtitle" data-aos="zoom-in-up">
         <span class="lang">#Vue</span>
         <span class="lang">#JavaScript</span>
-        <span class="lang">#PHP</span>
+        <span class="lang">#NodeJS</span>
       </p>
     </div>
     <div class="buttom" data-aos="fade-up">
@@ -202,7 +202,7 @@ export default {
           color: #41b85f;
         }
         .lang:nth-of-type(3) {
-          color: rgb(196, 1, 186);
+          color: rgb(1, 189, 180);
         }
         .lang:nth-of-type(2) {
           color: rgb(231, 209, 7);
