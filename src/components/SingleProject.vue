@@ -79,6 +79,7 @@ export default {
     background: #161c22;
     border-radius: 10px;
     width: 80vw;
+    max-width: 20rem;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -150,17 +151,25 @@ export default {
         }
       }
     }
-    @media (min-width: 768px) {
-      height: 90%;
+    @media (min-width: 35rem) {
+      height: 28rem;
+      width: 90%;
+      max-width: 90%;
+    }
+    @media (min-width: 50rem) {
+      height: 40rem;
       width: 85%;
+      max-width: 85%;
     }
     @media (min-width: 1200px) {
       height: 85%;
       width: 24rem;
+      max-width: 24rem;
     }
     @media (min-width: 1800px) {
       height: 85%;
       width: 28rem;
+      max-width: 28rem;
     }
   }
 

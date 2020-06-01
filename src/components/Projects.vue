@@ -88,12 +88,20 @@ export default {
       align-items: center;
       height: 28rem;
     }
-    @media (min-width: 768px) {
+    @media (min-width: 35rem) {
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: repeat(3, 50rem);
+      grid-template-rows: repeat(3, 32rem);
       grid-gap: 0px;
       .single-project{
-        height: 50rem;
+        height: 32rem;
+      }
+    }
+    @media (min-width: 50rem) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, 45rem);
+      grid-gap: 0px;
+      .single-project{
+        height: 45rem;
       }
     }
     @media (min-width: 1200px) {
