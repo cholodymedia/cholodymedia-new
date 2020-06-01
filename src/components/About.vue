@@ -51,7 +51,7 @@ export default {
         justify-content: center;
         align-items: center;
         img {
-          width: 25vw;
+          width: 20vw;
           filter: contrast(0.9);
         }
       }

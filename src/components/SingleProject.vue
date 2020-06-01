@@ -89,7 +89,7 @@ export default {
       justify-content: center;
       align-items: center;
       img {
-        width: 80%;
+        width: 55%;
         height: auto;
       }
     }
