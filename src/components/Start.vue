@@ -1,5 +1,12 @@
 <template>
   <div class="startWrapper">
+    <div class="background">
+      <span><font-awesome-icon icon="terminal" /></span>
+      <span><font-awesome-icon icon="terminal" /></span>
+      <span><font-awesome-icon icon="terminal" /></span>
+      <span><font-awesome-icon icon="terminal" /></span>
+      <span><font-awesome-icon icon="terminal" /></span>
+    </div>
     <nav class="nav">
       <div class="left">
         <img :src="logo" alt="Logo" data-aos="fade-right">
@@ -110,6 +117,64 @@ export default {
     @media (max-width: 700px) {
       height: 90vh;
     }
+
+    .background {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      @media (max-width: 700px) {
+        display: none;
+      }
+    }
+
+    .background span{
+      position: absolute;
+      display: block;
+      width: 20px;
+      height: 20px;
+      color: white;
+      animation: animate 25s linear infinite;
+      bottom: -150px;
+      font-size: 2rem;
+
+      &:nth-child(1){
+        left: 25%;
+        width: 80px;
+        height: 80px;
+        animation-delay: 14s;
+      }
+
+
+      &:nth-child(2){
+        left: 10%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 3s;
+      }
+
+      &:nth-child(3){
+        left: 80%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 8s;
+      }
+
+      &:nth-child(4){
+        left: 40%;
+        width: 60px;
+        height: 60px;
+        animation-delay: 0s;
+      }
+
+      &:nth-child(5){
+        left: 65%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 20s;
+      }
+    }
+
     .nav {
       flex: 1.8;
       display: flex;
@@ -278,4 +343,18 @@ export default {
       }
     }
   }
+
+@keyframes animate {
+  0%{
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+
+  100%{
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
 </style>
